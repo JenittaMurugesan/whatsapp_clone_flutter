@@ -25,7 +25,9 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
 
+
     return DefaultTabController(
+      initialIndex: 1,
       length: 4,
       child: Scaffold(
         appBar: AppBar(
@@ -50,6 +52,7 @@ class _MainScreenState extends State<MainScreen> {
           ],
         ),
         body: TabBarView(
+
           children: [
             ChatScreen(),
             ChatScreen(),
