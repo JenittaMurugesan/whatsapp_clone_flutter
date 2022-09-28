@@ -23,7 +23,7 @@ class _OtpScreenState extends State<OtpScreen> {
         title: Text(
           "Verify your phone number",
           style: TextStyle(color: greenColor, fontSize: 25),
-          textAlign: TextAlign.center,
+
         ),
       ),
       body: SingleChildScrollView(

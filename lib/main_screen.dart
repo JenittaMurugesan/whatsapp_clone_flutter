@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:untitled4/callscreen.dart';
 import 'package:untitled4/chat_screen.dart';
+import 'package:untitled4/statusscreen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -56,12 +58,9 @@ class _MainScreenState extends State<MainScreen> {
           children: [
             ChatScreen(),
             ChatScreen(),
-            Text('euwyriruiuig'),
-            Text('euwyriruiuig'),
-
-
-
-          ],
+           StatusScreen(),
+            CallScreen(),
+        ],
         ),
       ),
     );

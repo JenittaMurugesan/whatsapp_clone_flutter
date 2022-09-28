@@ -48,16 +48,15 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
                   height: 8,
                 ),
                 Container(
-
                   width: MediaQuery.of(context).size.width / 2.5,
                   child: TextFormField(
-                    onChanged: (number)
-                    {
-                      if(number.length ==6){
-                        Navigator.push(context, MaterialPageRoute(
-                            builder: (context)=> ProfileSetupScreen()));
+                    onChanged: (number) {
+                      if (number.length == 6) {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ProfileSetupScreen()));
                       }
-
                     },
                     cursorColor: greenColor,
                     style: TextStyle(fontSize: 24, letterSpacing: 6),
@@ -98,12 +97,12 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
                           SizedBox(
                             width: 18,
                           ),
-                            Text(
+                          Text(
                             "Resent SMS",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ],
-                      )  ,
+                      ),
                       Text("59:00"),
                     ],
                   ),
@@ -126,11 +125,14 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
                         Icons.call,
                         color: greenColor,
                       ),
-                      SizedBox(width:18 ,),
+                      SizedBox(
+                        width: 18,
+                      ),
                       RichText(
                           text: TextSpan(
                         text: 'Call me',
-                        style: TextStyle(color: greenColor,fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            color: greenColor, fontWeight: FontWeight.bold),
                       ))
                     ],
                   ),
