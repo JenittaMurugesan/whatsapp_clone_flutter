@@ -25,14 +25,12 @@ class _StatusScreenState extends State<StatusScreen> {
                 Icons.create,
                 size: 32,
               ),
-
             ),
-
-
           ),
-          SizedBox(height: 12,),
+          SizedBox(
+            height: 12,
+          ),
           FloatingActionButton(
-
             onPressed: () {},
             backgroundColor: greenColor,
             child: const Icon(
@@ -40,11 +38,10 @@ class _StatusScreenState extends State<StatusScreen> {
               size: 32,
             ),
           )
-    ],
+        ],
       ),
       backgroundColor: Colors.white,
       body: Column(
-
         children: [
           Padding(
             padding: const EdgeInsets.all(12.0),
@@ -101,12 +98,6 @@ class _StatusScreenState extends State<StatusScreen> {
               style: TextStyle(color: Colors.black),
             ),
           ),
-
-
-
-
-
-
         ],
       ),
     );
