@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:untitled4/callscreen.dart';
 import 'package:untitled4/chat_screen.dart';
+import 'package:untitled4/linked_devices_screen.dart';
+import 'package:untitled4/newbroadcast.dart';
 import 'package:untitled4/newgroup.dart';
+import 'package:untitled4/settings_screen.dart';
 import 'package:untitled4/statusscreen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -52,38 +55,70 @@ class _MainScreenState extends State<MainScreen> {
                   PopupMenuItem(
                       child: TextButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute
-                        (builder: (context)=>NewGroup()),
-
-
-
-                      ) ; },
-                    child: Text("New Group",style: TextStyle(color: Colors.black),),
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => NewGroup()),
+                      );
+                    },
+                    child: Text(
+                      "New Group",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  )),
+                  PopupMenuItem(
+                      child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => NewBroadcast()));
+                    },
+                    child: Text(
+                      "New broadcast",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  )),
+                  PopupMenuItem(
+                      child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LinkedDevicesScreen()));
+                    },
+                    child: Text(
+                      "Linked devices",
+                      style: TextStyle(color: Colors.black),
+                    ),
                   )),
                   PopupMenuItem(
                       child: TextButton(
                     onPressed: () {},
-                    child: Text("New broadcast",style: TextStyle(color: Colors.black),),
+                    child: Text(
+                      "Starred messages",
+                      style: TextStyle(color: Colors.black),
+                    ),
                   )),
                   PopupMenuItem(
                       child: TextButton(
                     onPressed: () {},
-                    child: Text("Linked devices",style: TextStyle(color: Colors.black),),
+                    child: Text(
+                      "Payments",
+                      style: TextStyle(color: Colors.black),
+                    ),
                   )),
                   PopupMenuItem(
                       child: TextButton(
-                    onPressed: () {},
-                    child: Text("Starred messages",style: TextStyle(color: Colors.black),),
-                  )),
-                  PopupMenuItem(
-                      child: TextButton(
-                    onPressed: () {},
-                    child: Text("Payments",style: TextStyle(color: Colors.black),),
-                  )),
-                  PopupMenuItem(
-                      child: TextButton(
-                    onPressed: () {},
-                    child: Text("Settings",style: TextStyle(color: Colors.black),),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SettingsScreen()));
+                    },
+                    child: Text(
+                      "Settings",
+                      style: TextStyle(color: Colors.black),
+                    ),
                   )),
                 ];
               },

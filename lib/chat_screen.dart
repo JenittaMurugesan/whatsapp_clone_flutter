@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled4/contactscreen.dart';
 import 'package:untitled4/message_screen.dart';
 
 class ChatScreen extends StatefulWidget {
@@ -15,7 +16,13 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>ContactScreen()));
+
+
+
+
+        },
         backgroundColor: greenColor,
         child: const Icon(
           Icons.message,

@@ -37,7 +37,7 @@ class _StatusScreenState extends State<StatusScreen> {
               Icons.camera_alt,
               size: 32,
             ),
-          )
+          ),
         ],
       ),
       backgroundColor: Colors.white,
@@ -56,7 +56,8 @@ class _StatusScreenState extends State<StatusScreen> {
                         CircleAvatar(
                           radius: 28,
                           backgroundImage: NetworkImage(
-                              "https://www.sanjayjangam.com/wp-content/uploads/2021/12/beautiful-dp-for-whatsapp.jpg"),
+                              "https://www.sanjayjangam.com/wp-content/upload"
+                                  "s/2021/12/beautiful-dp-for-whatsapp.jpg"),
                         ),
                         Positioned(
                             top: 30,
@@ -65,7 +66,7 @@ class _StatusScreenState extends State<StatusScreen> {
                               radius: 11,
                               backgroundColor: greenColor,
                               child: Icon(Icons.add),
-                            ))
+                            )),
                       ],
                     ),
                   ),
