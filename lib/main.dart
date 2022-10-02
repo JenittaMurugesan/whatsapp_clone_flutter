@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled4/linked_devices_screen.dart';
 import 'package:untitled4/welcomescreen.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const WelcomeScreen(),
+      home: const LinkedDevicesScreen(),
     );
   }
 }

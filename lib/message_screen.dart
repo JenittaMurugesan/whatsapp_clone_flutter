@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled4/name_screen.dart';
 
 class MessageScreen extends StatelessWidget {
   const MessageScreen({Key? key}) : super(key: key);
@@ -6,6 +7,8 @@ class MessageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color greenColor = const Color(0xFF007d6f);
+    Color greenColorButton = const Color(0xFF26d367);
+
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
@@ -20,19 +23,28 @@ class MessageScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: greenColor,
         title: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Murugesan Tendulkar",
-              style: TextStyle(color: Colors.white, fontSize: 16.0),
-            ),
-            Text(
-              "last seen yesterday at 11 AM",
-              style: TextStyle(color: Colors.white, fontSize: 14.0),
-            )
-          ],
-        ),
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              TextButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => NameScreen()));
+                },
+                child: Column(
+                  children: [
+                    Text(
+                      "Murugesan Tendulkar",
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                    ),
+                    Text(
+                      "last seen yesterday at 11AM",
+                      style: TextStyle(color: Colors.white, fontSize: 12),
+                    )
+                  ],
+                ),
+              )
+            ]),
         leading: new Padding(
           padding: const EdgeInsets.all(5.0),
           child: new CircleAvatar(
@@ -52,7 +64,7 @@ class MessageScreen extends StatelessWidget {
           SizedBox(
             width: 14,
           ),
-          new Icon(Icons.more_vert)
+          new Icon(Icons.more_vert),
         ],
       ),
       bottomNavigationBar: Container(

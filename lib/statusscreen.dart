@@ -1,4 +1,11 @@
+import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+
+var statusList = {
+  0: ['abi', '1 minute ago'],
+  0: ['abi', '1 minute ago'],
+  0: ['abi', '1 minute ago'],
+};
 
 class StatusScreen extends StatefulWidget {
   const StatusScreen({Key? key}) : super(key: key);
@@ -57,7 +64,7 @@ class _StatusScreenState extends State<StatusScreen> {
                           radius: 28,
                           backgroundImage: NetworkImage(
                               "https://www.sanjayjangam.com/wp-content/upload"
-                                  "s/2021/12/beautiful-dp-for-whatsapp.jpg"),
+                              "s/2021/12/beautiful-dp-for-whatsapp.jpg"),
                         ),
                         Positioned(
                             top: 30,
